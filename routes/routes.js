@@ -8,7 +8,7 @@ const routes = express.Router();
 
 async function writeFileAsistencia(dato) {
     try {
-        await writeFilePromise('https://www.dropbox.com/s/m8gq3no9dmzy1sk/asistencia.csv', dato, {
+        await writeFilePromise('./asistencia', dato, {
             flag: 'a'
         });
     } catch (e) {
